@@ -1,0 +1,20 @@
+{
+  "name": "graphql-validator",
+  "version": "1.0.0",
+  "main": "graphql-validator-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@graphql-inspector/core": "^6.1.0",
+    "@graphql-tools/load": "^8.0.2",
+    "@graphql-tools/url-loader": "^8.0.2",
+    "fs": "^0.0.1-security",
+    "graphql-tag": "^2.12.6",
+    "path": "^0.12.7"
+  }
+}
