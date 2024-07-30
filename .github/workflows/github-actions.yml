@@ -1,0 +1,18 @@
+name: GraphQL Schema Validation
+
+on: [pull_request]
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    - run: cd graphql-validator && npm install
+    - run: node graphql-validator/graphql-validator-script.js

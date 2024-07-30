@@ -22,11 +22,11 @@ To use the script just need to use these commands from terminal:
 (you need to run the backend first)
 
 ``` 
-cd frontend/script;
+cd graphql-validator;
 ```
 ``` 
 npm i;
 ```
 ``` 
-node validation-script.js
+node graphql-validator-script.js
 ```
