@@ -1,0 +1,15 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  getUser(id: Int!): User! @deprecated(reason: "query deprecated, use getUserV2 instead")
+  getUserV2(id: Int!): User!
+}
+
+type User {
+  firstName: String!
+  id: Int!
+  lastName: String!
+  name: String @deprecated(reason: "Field deprecated, please use firstName and lastName instead")
+}

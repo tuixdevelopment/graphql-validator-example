@@ -1,0 +1,23 @@
+react example
+
+const GET_USER = gql`
+  query getUser($id: Int!) {
+    getUser(id: $id) {
+      id
+      name
+    }
+  }
+`;
+
+flutter example: 
+
+class GraphQLAPIDefinitions {
+  static const getUser = r'''
+  query getUser($id: Int!){
+    getUser(id: $id) {
+      id
+      name
+    }
+  }
+  ''';
+}
